@@ -49,3 +49,6 @@ repos:
         entry: pipenv run pylint
         language: system
         types: [python]
+
+default_language_version:
+    python: python3.10
