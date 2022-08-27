@@ -5,6 +5,11 @@ preview = true
 [tool.isort]
 profile = "black"
 
+[tool.pydocstyle]
+ignore = [
+    "D100",
+]
+
 [tool.pylint]
 disable = [
     "R0903",
