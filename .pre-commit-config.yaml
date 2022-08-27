@@ -39,6 +39,11 @@ repos:
         entry: pipenv run pydocstyle
         language: system
         types: [python]
+    -   id: mypy
+        name: Checking types with mypy
+        entry: pipenv run mypy
+        language: system
+        types: [python]
     -   id: pylint
         name: Checking linting with Pylint
         entry: pipenv run pylint
