@@ -1,3 +1,16 @@
+[tool.black]
+quiet = true
+preview = true
+
+[tool.isort]
+profile = "black"
+
+[tool.pylint]
+disable = [
+    "R0903",
+    "C0114",
+]
+
 [tool.pytest.ini_options]
 pythonpath = "src"
 testpaths = [
