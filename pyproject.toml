@@ -1,0 +1,9 @@
+[tool.pytest.ini_options]
+pythonpath = "src"
+testpaths = [
+    "tests",
+]
+markers = [
+    "unit",
+]
+addopts = "-vv -x --lf --cov --strict-markers"

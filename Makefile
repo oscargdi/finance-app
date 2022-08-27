@@ -9,3 +9,7 @@ pre-commit-run: ## (devcontainer) Run all pre-commit hooks
 .PHONY: pre-commit-update
 pre-commit-update: ## (devcontainer) Update pre-commit hooks
 	pipenv run pre-commit autoupdate
+
+.PHONY: app-tests
+app-tests: ## (devcontainer) Run all tests
+	pipenv run pytest
