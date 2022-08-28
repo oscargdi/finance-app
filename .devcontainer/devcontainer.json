@@ -31,6 +31,7 @@
                 "files.insertFinalNewline": true,
                 "git.autofetch": true,
                 "python.defaultInterpreterPath": "/root/.local/share/virtualenvs/workspace-dqq3IVyd/bin/python",
+                "python.envFile": "${workspaceFolder}/.devcontainer/vscode.env",
                 "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
                 "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
                 "python.formatting.provider": "black",
