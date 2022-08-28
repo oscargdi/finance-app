@@ -13,6 +13,7 @@ repos:
     -   id: check-added-large-files
     -   id: pretty-format-json
         args: [--autofix, --indent, '4']
+    -   id: check-shebang-scripts-are-executable
 
 -   repo: https://github.com/macisamuele/language-formatters-pre-commit-hooks
     rev: v2.4.0
