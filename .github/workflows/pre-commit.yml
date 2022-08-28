@@ -18,3 +18,5 @@ jobs:
             run: pip install pipenv wheel
         -   name: "Install Dependencies"
             run: pipenv install --deploy --dev
+        -   name: "Run pre-commit"
+            run: make pre-commit-run
