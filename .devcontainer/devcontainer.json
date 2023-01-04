@@ -11,5 +11,8 @@
     "name": "Python 3 & PostgreSQL",
     "postCreateCommand": "./.devcontainer/setup.sh",
     "service": "app",
+    "settings": {
+        "files.insertFinalNewline": true
+    },
     "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
 }

@@ -22,3 +22,14 @@ repos:
         args: [--autofix, --preserve-quotes, --indent, '4']
     # -   id: pretty-format-toml
     #     args: [--autofix]
+
+-   repo: local
+    hooks:
+    -   id: black
+        name: Formatting code with Black
+        entry: pipenv run black
+        language: system
+        types: [python]
+
+default_language_version:
+    python: python3.11
