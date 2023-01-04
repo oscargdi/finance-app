@@ -1,4 +1,12 @@
 {
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "usernamehw.errorlens"
+            ]
+        }
+    },
     "dockerComposeFile": "docker-compose.yml",
     "name": "Python 3 & PostgreSQL",
     "postCreateCommand": "./.devcontainer/setup.sh",
