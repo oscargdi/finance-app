@@ -11,3 +11,10 @@ disable = [
     "C0114", # missing-module-docstring
     "C0115", # missing-class-docstring
 ]
+
+[tool.pytest.ini_options]
+testpaths = [
+    "tests",
+]
+
+addopts = "-vv -x --cov"
