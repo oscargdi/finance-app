@@ -51,6 +51,18 @@ repos:
         always_run: true
         pass_filenames: false
         language: system
+    -   id: coverage-badge
+        name: Updating coverage badge
+        entry: pipenv run coverage-badge -o docs/coverage.svg -f -q
+        always_run: true
+        pass_filenames: false
+        language: system
+    -   id: check-untracked-coverage-badge
+        name: Checking coverage badge update
+        entry: git diff --exit-code -s docs/coverage.svg
+        always_run: true
+        pass_filenames: false
+        language: system
 
 default_language_version:
     python: python3.11

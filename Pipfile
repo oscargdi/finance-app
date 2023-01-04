@@ -13,6 +13,7 @@ pylint = "*"
 mypy = "*"
 pytest = "*"
 pytest-cov = "*"
+coverage-badge = "*"
 
 [requires]
 python_version = "3.11"
