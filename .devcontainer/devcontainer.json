@@ -1,66 +1,7 @@
 {
-    "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-python.python",
-                "ms-python.vscode-pylance",
-                "ms-azuretools.vscode-docker",
-                "eamodio.gitlens",
-                "mtxr.sqltools",
-                "mtxr.sqltools-driver-pg",
-                "njpwerner.autodocstring"
-            ],
-            "settings": {
-                "editor.bracketPairColorization.enabled": true,
-                "editor.codeActionsOnSave": {
-                    "source.organizeImports": true
-                },
-                "editor.formatOnSave": true,
-                "editor.minimap.enabled": false,
-                "files.exclude": {
-                    "**/.DS_Store": true,
-                    "**/.coverage": true,
-                    "**/.git": true,
-                    "**/.hg": true,
-                    "**/.mypy_cache": true,
-                    "**/.pytest_cache": true,
-                    "**/.svn": true,
-                    "**/CVS": true,
-                    "**/Thumbs.db": true
-                },
-                "files.insertFinalNewline": true,
-                "git.autofetch": true,
-                "python.defaultInterpreterPath": "/root/.local/share/virtualenvs/workspace-dqq3IVyd/bin/python",
-                "python.envFile": "${workspaceFolder}/.devcontainer/vscode.env",
-                "python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
-                "python.formatting.blackPath": "/usr/local/py-utils/bin/black",
-                "python.formatting.provider": "black",
-                "python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
-                "python.languageServer": "Pylance",
-                "python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
-                "python.linting.enabled": true,
-                "python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
-                "python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
-                "python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
-                "python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
-                "python.linting.pylintEnabled": true,
-                "python.linting.pylintPath": "/usr/local/py-utils/bin/pylint",
-                "python.testing.pytestPath": "/usr/local/py-utils/bin/pytest",
-                "sqltools.connections": [
-                    {
-                        "connectString": "postgres://postgres:postgres@db:5432/postgres",
-                        "driver": "PostgreSQL"
-                    }
-                ],
-                "workbench.editor.enablePreview": false,
-                "workbench.editor.highlightModifiedTabs": true
-            }
-        }
-    },
     "dockerComposeFile": "docker-compose.yml",
     "name": "Python 3 & PostgreSQL",
     "postCreateCommand": "./.devcontainer/setup.sh",
-    "remoteUser": "vscode",
     "service": "app",
-    "workspaceFolder": "/workspace"
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
 }

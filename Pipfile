@@ -1,18 +1,12 @@
-[dev-packages]
-pre-commit = "*"
-pytest = "*"
-pytest-cov = "*"
-black = "*"
-isort = "*"
-pylint = "*"
-mypy = "*"
-
-[packages]
-
-[requires]
-python_version = "3.10"
-
 [[source]]
 url = "https://pypi.org/simple"
 verify_ssl = true
 name = "pypi"
+
+[packages]
+
+[dev-packages]
+pre-commit = "*"
+
+[requires]
+python_version = "3.11"
