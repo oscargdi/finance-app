@@ -1,0 +1,22 @@
+name: pre-commit
+
+on:
+    push:
+        branches: ["main"]
+    pull_request:
+        branches: ["main"]
+
+jobs:
+    pre-commit:
+        runs-on: ubuntu-latest
+        steps:
+        -   uses: actions/checkout@v3
+        -   uses: actions/setup-python@v4
+            with:
+                python-version: '3.11'
+        -   name: "Install Pipenv"
+            run: pip install pipenv wheel
+        -   name: "Install Dependencies"
+            run: pipenv install --deploy --dev
+        -   name: "Run pre-commit"
+            run: make pre-commit-run
